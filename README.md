@@ -1,6 +1,8 @@
 # Fun Facts Generator API Official Documentation
 
-## How to use the API with the fetch method
+## How to use the API
+
+You can see the documentation of the API right [here (RapidAPI Hub)](https://rapidapi.com/ojabrane43/api/fun-facts-generator). This documentation includes how to use it in different programming languages (C, C#, Python, Node.js, PHP, RapidQL, Java, and much more). The API is 100% free and available for everyone. And if you're interested to buy it please contact me on my [email address](mailto:ojabrane43@gmail.com)
 
 ## What is Fun Facts Generator API?
 
