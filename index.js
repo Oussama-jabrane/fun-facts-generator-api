@@ -5,6 +5,7 @@ const app = express();
 
 // Declaring the facts variable that contains a list of different facts
 const facts = [
+    // Every fact contains and id (special number) and a fact that contains the fun fact.
     {
         id: 1,
         fact: "There are around 700 separate programming languages."
@@ -2038,11 +2039,17 @@ app.get('/', (req, res) => {
     res.send(JSON.stringify(facts));
 })
 
+// Getting a fact by its id
 app.get('/:id', (req, res) => {
+    // Checking if the id is found on the server (The value fact returns a boolean [True or False])
     const fact = facts.find(f => f.id === parseInt(req.params.id));
+    // If the id given is not found. The server will automatically throw an 404 error and an error message
     if (!fact) res.status(404).send('<h1>The id given doesn\'t match with any of the ids on the list!</h1>');
+    // If the id given was found. The server will throw a success HTTP code (200) and the data will be shown on the UI of the website
     res.send(fact).status(200);
 })
 
-const PORT = process.env.PORT || 3000
+// Creating a PORT variable so the app will run on the PORT given in the environment variables, and if it's not given. The server will start at the PORT 3000 if it is not busy
+const PORT = process.env.PORT || 3000;
+// Listening to the PORT given in the PORT variable. And logging in the console that the server is listening to a PORT
 app.listen(PORT, () => console.log(`Listening on PORT ${PORT}`))

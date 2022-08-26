@@ -1,14 +1,15 @@
 {
   "name": "fun-facts-generator-api",
   "version": "1.0.0",
-  "description": "An awesome API that generates fun facts about computers, science, english, and much more...",
+  "description": "An awesome API that generates fun facts about computers, science, animals, and much more...",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon ."
   },
   "author": "Oussama Jabrane",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.1"
+    "express": "^4.18.1",
+    "serverless": "^3.22.0"
   }
 }
